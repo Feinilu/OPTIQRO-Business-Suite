@@ -8,7 +8,7 @@
 
 <title>OPTIQRO Dashboard</title>
 
-<link rel="stylesheet" href="dashboardV2.css">
+<?!= HtmlService.createHtmlOutputFromFile('dashboardCSS').getContent(); ?>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
@@ -92,7 +92,7 @@
 </div>
 
 <script src="dashboardV2.js"></script>
-
+<?!= HtmlService.createHtmlOutputFromFile('dashboardJS').getContent(); ?>
 </body>
 
 </html>
