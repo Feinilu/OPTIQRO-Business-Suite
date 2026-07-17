@@ -1,56 +1,98 @@
-<div id="dashboard" class="dash">
+<!DOCTYPE html>
+<html lang="es">
 
-    <div class="welcome">
+<head>
 
-        <div>
-            <h2>👋 Bienvenida, Stephania</h2>
-            <p>Resumen general de OPTIQRO Business Suite</p>
-        </div>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <button class="nuevoBtn">
-            + Nueva Cotización
-        </button>
+<title>OPTIQRO Dashboard</title>
 
-    </div>
+<link rel="stylesheet" href="dashboardV2.css">
 
-    <div class="cards">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-        <div class="cardDash">
-            <span>👥</span>
-            <h3 id="kpiClientes">0</h3>
-            <p>Clientes</p>
-        </div>
+</head>
 
-        <div class="cardDash">
-            <span>📦</span>
-            <h3 id="kpiProductos">0</h3>
-            <p>Productos</p>
-        </div>
+<body>
 
-        <div class="cardDash">
-            <span>📄</span>
-            <h3 id="kpiCotizaciones">0</h3>
-            <p>Cotizaciones</p>
-        </div>
+<div class="layout">
 
-        <div class="cardDash">
-            <span>🛒</span>
-            <h3 id="kpiCompras">0</h3>
-            <p>Órdenes</p>
-        </div>
+    <aside class="sidebar">
 
-    </div>
+        <div class="logo">
 
-    <div class="panelGrande">
-
-        <h3>📈 Actividad reciente</h3>
-
-        <div id="actividad">
-
-            Aquí aparecerán las últimas cotizaciones...
+            <img src="img/logo.png">
 
         </div>
 
-    </div>
+        <ul>
+
+            <li class="active">🏠 Dashboard</li>
+            <li>📋 Cotizaciones</li>
+            <li>👥 Clientes</li>
+            <li>📦 Productos</li>
+            <li>🚚 Proveedores</li>
+            <li>🛒 Compras</li>
+            <li>📊 Reportes</li>
+            <li>⚙ Configuración</li>
+
+        </ul>
+
+    </aside>
+
+    <main class="contenido">
+
+        <header>
+
+            <h1>Bienvenida Stephania 👋</h1>
+
+            <p>Sistema Administrativo OPTIQRO</p>
+
+        </header>
+
+        <section class="cards">
+
+            <div class="card">
+
+                <h3>Cotizaciones</h3>
+
+                <span id="cotizaciones">0</span>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Clientes</h3>
+
+                <span id="clientes">0</span>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Productos</h3>
+
+                <span id="productos">0</span>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Compras</h3>
+
+                <span id="compras">0</span>
+
+            </div>
+
+        </section>
+
+    </main>
 
 </div>
+
+<script src="dashboardV2.js"></script>
+
+</body>
+
+</html>
